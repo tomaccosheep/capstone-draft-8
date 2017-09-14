@@ -1,0 +1,13 @@
+I don't know if I use node_lister.py
+I need to add start and end support
+I need to add possible middle support
+Add escape character support
+Add m to n repetitions
+Add early quantifiers
+Add filter in range
+Add filter out range
+Add standard letter
+
+finish regexapp/regex_maker.py
+finish templates, static
+
