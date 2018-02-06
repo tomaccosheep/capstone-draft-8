@@ -81,7 +81,8 @@ def question_check_test(request, game_id):
 
 def new_game(request):
     game = Game_Num()
-    unique_id = game.unique_id
+    unique_id = get_random_string(length=32)
+    game.unique_id = unique_id 
     game.save()
     return HttpResponseRedirect('/index/{}/'.format(unique_id))
 

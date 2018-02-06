@@ -5,8 +5,8 @@ from django.db import models
 from django.utils.crypto import get_random_string
 
 class Game_Num(models.Model):
-    def_id = get_random_string(length=32)
-    unique_id = models.CharField(max_length=32, primary_key=True, default=def_id)
+    id = models.AutoField(primary_key=True)
+    unique_id = models.CharField(max_length=32, null=True, unique=True)
     initial = models.BooleanField(default=True)
     well_being = models.BigIntegerField(null=True)
     money = models.BigIntegerField(null=True)
